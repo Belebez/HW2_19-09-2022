@@ -12,7 +12,7 @@ while (flag != 1) // создал цикл для ввода именно трё
     if ((number >= 100) && (number <= 999))  //  проверка какое ввел число пользователь
     {
         int SecondNum = (number / 10) % 10;  //  получаем второе число 
-        Console.WriteLine($"Второй цифра в числе - {number}, является - {SecondNum}");
+        Console.WriteLine($"Второй цифрой в числе - {number}, является - {SecondNum}");
         flag = 1;  //  меняем значения для выхода из цикла
     }
     else
