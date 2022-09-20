@@ -6,11 +6,11 @@ string number = Console.ReadLine();
 int len = number.Length;
 int num = int.Parse(number);
 
-int degree = Convert.ToInt32(Math.Pow(10, (len - 3)));
+int div = Convert.ToInt32(Math.Pow(10, (len - 3)));
 
 if (num > 99)  //  проверка есть ли третье число
 {
-    int num3 = (num / degree) % 10;  //  получаем третье число 
+    int num3 = (num / div) % 10;  //  получаем третье число 
     Console.WriteLine($"Третья цифра в числе - {number}, является - {num3}");
     
 }
@@ -20,7 +20,7 @@ else
 }
 
 
-// это решение явно не такое простое, хотя в python оно будет выглядеть лаконичней
+// в python как-то проще это сделать)))
 
 // num = int(input("Введите число - "))
 // n = len(str(num))
@@ -31,7 +31,7 @@ else
 // else:
 //     print(f"В числе {num} нет третьего числа")
 
-// второе решение
+// второе решение через цикл
 
 // Console.Write("Введите число - ");
 // int number = int.Parse(Console.ReadLine());
